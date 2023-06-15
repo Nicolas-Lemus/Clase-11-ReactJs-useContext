@@ -5,6 +5,7 @@ import NavBar from '../components/NavBar/NavBar'
 import Products from '../pages/Products'
 import Item from "../pages/Item"
 import Category from '../pages/Category'
+import Carts from '../pages/Carts'
 
 
 const MainRauter = () => {
@@ -16,6 +17,7 @@ const MainRauter = () => {
                 <Route exact path='/products' element={<Products/>} />
                 <Route exact path='/category/:categoryid' element={<Category/>} />
                 <Route exact path='/products/:productsID' element={<Item/>} />
+                <Route exact path='/carts' element={<Carts/>} />
             </Routes>
         </BrowserRouter>
     )

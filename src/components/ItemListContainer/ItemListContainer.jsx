@@ -9,17 +9,16 @@ const itemListContainer = ({tecnologia}) => {
         <div>
             <Headers HeadersH1="Productos"/>
             <div className='divPadre'>
-            {
-                tecnologia.map(producto => {
-                    return(
-                        <Card key={producto.id} tecnologia={producto}/>
-                    )
-                })
-            }
+                {
+                    tecnologia.map(producto => {
+                        return(
+                            <Card key={producto.id} tecnologia={producto}/>
+                        )
+                    })
+                }
+            </div>
         </div>
-        </div>
-        
     )
-}
+};
 
 export default itemListContainer
